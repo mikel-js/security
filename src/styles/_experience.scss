@@ -1,0 +1,19 @@
+.experience {
+  display: flex;
+  width: 100%;
+  min-height: 500px;
+
+  @media (min-height: 900px) {
+    min-height: 500px !important;
+  }
+
+  &__left {
+    flex: 1;
+    background-color: #ef3705;
+  }
+
+  &__right {
+    flex: 10;
+    background-color: #19156c;
+  }
+}

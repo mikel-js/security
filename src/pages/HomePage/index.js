@@ -1,7 +1,12 @@
 import React from 'react';
+import Snippet from './Components/Snippet';
 
 const index = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Snippet />
+    </div>
+  );
 };
 
 export default index;

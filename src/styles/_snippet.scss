@@ -1,0 +1,119 @@
+.snippet {
+  display: flex;
+  width: 100%;
+  max-height: calc(100vh - 64px);
+
+  @media (min-height: 680px) {
+    max-height: calc(100vh - 452px);
+  }
+
+  @media (min-height: 900px) {
+    max-height: calc(100vh - 552px);
+  }
+
+  &__images {
+    display: flex;
+    flex: 1;
+
+    img {
+      filter: brightness(50%);
+    }
+
+    &-home {
+      display: flex;
+      flex: 1;
+      padding: 1px;
+      position: relative;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeInLeft;
+      animation-name: fadeInLeft;
+    }
+
+    @-webkit-keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(-500px);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-500px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    &-business {
+      display: flex;
+      flex: 1;
+      padding: 1px;
+      position: relative;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-name: fadeInRight;
+      animation-name: fadeInRight;
+    }
+
+    @-webkit-keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateX(500px);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      0% {
+        opacity: 0;
+        transform: translateX(500px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &-text {
+      bottom: 7%;
+      top: auto;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      color: #ffffff;
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+
+      .half-container {
+        width: 60%;
+        text-align: center;
+        margin-right: 30px;
+      }
+
+      &.business {
+        justify-content: flex-start;
+        margin-left: 30px;
+      }
+    }
+  }
+}

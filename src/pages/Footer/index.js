@@ -34,7 +34,7 @@ const index = () => {
 
   const menu2 = [
     {
-      id: 1,
+      id: 5,
       title: 'COMPANY',
       subMenu: [
         'About us',
@@ -46,7 +46,7 @@ const index = () => {
       ],
     },
     {
-      id: 2,
+      id: 6,
       title: 'LEGAL',
       subMenu: [
         'Terms of service',
@@ -56,11 +56,11 @@ const index = () => {
       ],
     },
     {
-      id: 3,
+      id: 7,
       title: 'FOLLOW US',
       subMenu: ['Secure blog', 'Technical research', 'Twitter', 'LinkedIn'],
     },
-    { id: 4, title: 'GLOBAL' },
+    { id: 8, title: 'GLOBAL' },
   ];
 
   return (

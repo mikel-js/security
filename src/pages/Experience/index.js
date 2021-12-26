@@ -1,10 +1,10 @@
 import React from 'react';
-
+import ThreeScene from './animation/ThreeScene';
 const index = () => {
   return (
     <div className='experience'>
-      <div className='experience__left'></div>
-      <div className='experience__right'></div>
+      <div className='experience__left' />
+      <ThreeScene />
     </div>
   );
 };

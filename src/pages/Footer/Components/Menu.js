@@ -9,8 +9,8 @@ const Menu = ({ menu }) => {
             <>
               {' '}
               <h4>{title}</h4>
-              {subMenu.map((menu) => (
-                <p>{menu}</p>
+              {subMenu.map((menu, i) => (
+                <p key={i}>{menu}</p>
               ))}
             </>
           ) : (

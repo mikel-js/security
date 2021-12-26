@@ -14,7 +14,7 @@ const index = () => {
     },
     {
       id: 2,
-      title: 'Career at Secure',
+      title: 'Career at F-Sure',
       description: 'Career content.',
       linkText: 'Read more',
       image: business2,

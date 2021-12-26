@@ -24,8 +24,7 @@ const NavBar = () => {
     <div className='navBar'>
       <div className='navBar__container'>
         <div>
-          <span>Secure Clone</span>
-          <i className='fas fa-signal' />
+          <h3>F-Sure</h3>
         </div>
         <div className='navBar__items'>
           {renderNav()}

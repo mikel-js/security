@@ -23,8 +23,6 @@ const App = () => {
     camera.position.z = 2;
     scene.add(camera);
 
-    const geometry = new THREE.BoxGeometry(1, 1, 1);
-
     const fontLoader = new FontLoader();
 
     fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
@@ -40,7 +38,7 @@ const App = () => {
         bevelSegments: 5,
       });
       textGeometry.center();
-      const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const material = new THREE.MeshBasicMaterial({ color: 0xef3705 });
       const text = new THREE.Mesh(textGeometry, material);
       scene.add(text);
 

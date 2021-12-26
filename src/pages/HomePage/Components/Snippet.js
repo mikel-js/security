@@ -1,5 +1,5 @@
 import React from 'react';
-import home from '../../../assets/images/home.jpg';
+import home from '../../../assets/images/home2.jpg';
 import business from '../../../assets/images/business.jpg';
 
 const Snippet = () => {

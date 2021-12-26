@@ -1,7 +1,7 @@
 import React from 'react';
 
 const index = () => {
-  return <div>footer</div>;
+  return <div className='footer'>footer</div>;
 };
 
 export default index;

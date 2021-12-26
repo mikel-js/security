@@ -1,0 +1,21 @@
+.statement {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 60%;
+
+    p {
+      padding-right: 10%;
+    }
+  }
+
+  &--link {
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}

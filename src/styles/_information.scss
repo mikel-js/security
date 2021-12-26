@@ -1,0 +1,36 @@
+.information {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+
+  &__content {
+    display: flex;
+    width: 60%;
+  }
+
+  &__container {
+    flex: 1;
+    cursor: pointer;
+
+    img {
+      width: 358px;
+      height: 170px;
+    }
+
+    h2 {
+      font-weight: 400;
+    }
+
+    &--link {
+      font-weight: bold;
+    }
+
+    &:hover {
+      h2,
+      .information__container--link {
+        color: blue;
+      }
+    }
+  }
+}

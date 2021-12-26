@@ -2,7 +2,7 @@ import React from 'react';
 import NewsSummary from './Components/NewsSummary';
 import Blog from './Components/Blog';
 import business1 from '../../assets/images/business1.jpg';
-import business2 from '../../assets/images/business2.jpg';
+import business2 from '../../assets/images/building2.jpg';
 import business3 from '../../assets/images/business3.jpg';
 
 const News = () => {

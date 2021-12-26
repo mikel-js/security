@@ -17,7 +17,6 @@ function App() {
       <News />
       <Story />
       <Information />
-      <Awards />
       <Statement />
       <Footer />
     </div>

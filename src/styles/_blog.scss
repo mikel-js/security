@@ -1,0 +1,21 @@
+.blog {
+  margin-bottom: 70px;
+  &__container {
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      .blog--content {
+        color: blue;
+      }
+    }
+    p {
+      margin: 5px 0;
+    }
+  }
+  &--date {
+    color: #8a8a8a;
+  }
+  &--content {
+    font-weight: bold;
+  }
+}

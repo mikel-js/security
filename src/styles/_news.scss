@@ -1,0 +1,18 @@
+.news {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+
+  &__container {
+    display: flex;
+    width: 70%;
+  }
+
+  &__newsSummary {
+    flex: 1.7;
+  }
+
+  &__blog {
+    flex: 1;
+  }
+}

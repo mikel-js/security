@@ -112,7 +112,9 @@
 
       &.business {
         justify-content: flex-start;
-        margin-left: 30px;
+        .half-container {
+          margin-left: 30px;
+        }
       }
     }
   }

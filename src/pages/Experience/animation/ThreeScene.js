@@ -26,12 +26,12 @@ const App = () => {
     const fontLoader = new FontLoader();
 
     fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
-      const textGeometry = new TextGeometry('F-Sure', {
+      const textGeometry = new TextGeometry('F-Security', {
         font: font,
-        size: 0.5,
+        size: 0.7,
         height: 0.2,
         curveSegments: 12,
-        bevelEnabled: true,
+        bevelEnabled: false,
         bevelThickness: 0,
         bevelSize: 0,
         bevelOffset: 0,

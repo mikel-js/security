@@ -15,7 +15,7 @@ const NavBar = () => {
       return (
         <div key={id} className='navBar__items-item'>
           {icon && <i className={icon} />}
-          <span>{name}</span>
+          <a href='#'>{name}</a>
         </div>
       );
     });
@@ -24,7 +24,7 @@ const NavBar = () => {
     <div className='navBar'>
       <div className='navBar__container'>
         <div>
-          <h3>F-Sure</h3>
+          <h3>F-Security</h3>
         </div>
         <div className='navBar__items'>
           {renderNav()}

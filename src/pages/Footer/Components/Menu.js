@@ -10,7 +10,9 @@ const Menu = ({ menu }) => {
               {' '}
               <h4>{title}</h4>
               {subMenu.map((menu, i) => (
-                <p key={i}>{menu}</p>
+                <a href='#' key={i}>
+                  {menu}
+                </a>
               ))}
             </>
           ) : (

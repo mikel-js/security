@@ -15,9 +15,10 @@
       text-decoration: none;
       cursor: pointer;
       margin: 7px 0;
+      color: #212121;
 
       &:visited {
-        color: #212121;
+        color: inherit;
       }
       &:hover {
         color: #0014a0;

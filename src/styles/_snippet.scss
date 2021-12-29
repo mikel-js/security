@@ -99,7 +99,7 @@
       left: 0;
       position: absolute;
       width: 100%;
-      color: #ffffff;
+      color: $white;
       display: flex;
       width: 100%;
       justify-content: flex-end;
@@ -107,7 +107,7 @@
 
       &:hover {
         h2 {
-          color: #a1d1ff;
+          color: $light-blue;
         }
       }
 

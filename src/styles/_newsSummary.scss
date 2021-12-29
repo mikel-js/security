@@ -7,7 +7,8 @@
     margin-bottom: 30px;
     height: 200px;
     display: flex;
-    box-shadow: 1.2px 1.5px 1.5px 1px #e6e6e6;
+    box-shadow: 1.2px 1.5px 1.5px 1px $light-gray;
+    border-top: 0.1px solid $light-gray;
 
     &--image img {
       height: 200px;
@@ -19,7 +20,7 @@
 
       &:hover {
         h3 {
-          color: blue;
+          color: $blue;
         }
       }
 
@@ -29,7 +30,7 @@
         cursor: pointer;
 
         &:hover {
-          color: blue;
+          color: $blue;
         }
       }
     }

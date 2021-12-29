@@ -6,11 +6,13 @@ body,
   font-family: 'FS Sans Web', sans-serif;
   min-height: 100vh;
 }
+// Variables
+@import './styles/settings';
 
+// Page styles
 @import './styles/navBar';
 @import './styles/snippet';
 @import './styles/experience';
-@import './styles/awards';
 @import './styles/footer';
 @import './styles/news';
 @import './styles/statement';

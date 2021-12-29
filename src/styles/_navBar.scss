@@ -1,8 +1,8 @@
 .navBar {
   display: flex;
   justify-content: center;
-  background-color: #0014a0;
-  color: #ffffff;
+  background-color: $dark-blue;
+  color: $white;
   height: 52px;
 
   &__container {
@@ -28,7 +28,7 @@
 
       a {
         text-decoration: none;
-        color: white;
+        color: $white;
       }
     }
   }

@@ -21,6 +21,7 @@ const App = () => {
     camera.position.x = 1;
     camera.position.y = 1;
     camera.position.z = 2;
+    camera.lookAt(scene.position);
     scene.add(camera);
 
     const fontLoader = new FontLoader();

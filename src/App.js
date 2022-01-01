@@ -5,7 +5,6 @@ import News from './pages/News';
 import Statement from './pages/Statement';
 import Story from './pages/Story';
 import Information from './pages/Information';
-import Awards from './pages/Awards';
 import Footer from './pages/Footer';
 
 function App() {

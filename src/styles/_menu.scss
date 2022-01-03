@@ -1,6 +1,7 @@
 .menu {
   display: flex;
   width: 100%;
+  margin-top: $margin-medium;
 
   &__container {
     flex: 1;
@@ -22,8 +23,13 @@
     }
   }
 
+  &--title {
+    font-weight: bold;
+  }
+
   &--global {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     border: solid black 1px;
     border-radius: 5px;

@@ -5,6 +5,15 @@
   color: $white;
   height: 52px;
 
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+
+  &--title {
+    font-weight: bold;
+  }
+
   &__container {
     width: 60%;
     display: flex;
@@ -22,13 +31,11 @@
     }
 
     &-item {
-      padding: 0 14px;
+      padding: 10px 14px;
       display: flex;
       align-items: center;
-
-      a {
-        text-decoration: none;
-        color: $white;
+      &:hover {
+        border-bottom: 2px solid $white;
       }
     }
   }

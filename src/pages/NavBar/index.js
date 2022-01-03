@@ -24,7 +24,9 @@ const NavBar = () => {
     <div className='navBar'>
       <div className='navBar__container'>
         <div>
-          <h3>F-Security</h3>
+          <a href='#' className='navBar--title'>
+            F-Security
+          </a>
         </div>
         <div className='navBar__items'>
           {renderNav()}

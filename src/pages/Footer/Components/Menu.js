@@ -8,7 +8,9 @@ const Menu = ({ menu }) => {
           {subMenu ? (
             <>
               {' '}
-              <h4>{title}</h4>
+              <a href='#' className='menu--title'>
+                {title}
+              </a>
               {subMenu.map((menu, i) => (
                 <a href='#' key={i}>
                   {menu}

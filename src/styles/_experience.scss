@@ -10,5 +10,24 @@
   &__left {
     width: 200px;
     background-color: $cyber-orange;
+    display: flex;
+
+    &-button {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      margin-bottom: $margin-medium;
+      width: 100%;
+
+      button {
+        border-radius: $margin-small;
+        border: none;
+        padding: 15px $margin-small;
+        background-color: $dark-blue;
+        color: $white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
   }
 }

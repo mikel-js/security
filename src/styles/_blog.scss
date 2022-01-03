@@ -1,7 +1,7 @@
 .blog {
-  margin-bottom: 70px;
+  margin-bottom: $margin-larger;
   &__container {
-    margin-bottom: 20px;
+    margin-bottom: $margin-medium;
     cursor: pointer;
     &:hover {
       .blog--content {
@@ -9,7 +9,7 @@
       }
     }
     p {
-      margin: 5px 0;
+      margin: $margin-small 0;
     }
   }
   &--date {

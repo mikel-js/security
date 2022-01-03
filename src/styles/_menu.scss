@@ -10,7 +10,7 @@
     a {
       text-decoration: none;
       cursor: pointer;
-      margin: 7px 0;
+      margin: $margin-small 0;
       color: #212121;
 
       &:visited {
@@ -22,18 +22,12 @@
     }
   }
 
-  &__container {
-    &:last-child {
-      align-items: center;
-    }
-  }
-
   &--global {
     display: inline-flex;
     align-items: center;
     border: solid black 1px;
     border-radius: 5px;
-    padding: 0 50px;
+    padding: 0 $margin-large;
     cursor: pointer;
 
     &:hover {
@@ -43,7 +37,7 @@
 
     i {
       font-size: 1.6rem;
-      margin-right: 10px;
+      margin-right: $margin-medium;
     }
   }
 }

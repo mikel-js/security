@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "eslint-plugin-flowtype": "^8.0.3",
     "font-awesome": "^4.7.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -24,12 +23,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [

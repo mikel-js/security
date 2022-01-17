@@ -5,7 +5,11 @@
 
   &__container {
     display: flex;
-    width: 70%;
+    width: 95%;
+
+    @include breakpoint(desktop) {
+      width: 70%;
+    }
   }
 
   &__newsSummary {

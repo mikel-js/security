@@ -5,18 +5,29 @@
 
   &__container {
     margin-bottom: 30px;
-    height: 200px;
+    // height: 200px;
     display: flex;
+    flex-direction: column;
     box-shadow: 1.2px 1.5px 1.5px 1px $light-gray;
     border-top: 0.1px solid $light-gray;
+
+    @include breakpoint(tab-land) {
+      flex-direction: row;
+    }
 
     &--image img {
       height: 200px;
     }
 
     &--content {
-      margin: 0 60px;
       cursor: pointer;
+      margin: 0 10px;
+      @include breakpoint(desktop) {
+        margin: 0 20px;
+      }
+      @include breakpoint(desktop-large) {
+        margin: 0 60px;
+      }
 
       &:hover {
         h3 {

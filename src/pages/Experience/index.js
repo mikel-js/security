@@ -11,7 +11,7 @@ const Experience = () => {
           <button onClick={toggleDarkMode}>Toggle Background</button>
         </div>
       </div>
-      <ThreeScene darkMode={darkMode} />
+      {/* <ThreeScene darkMode={darkMode} /> */}
     </div>
   );
 };

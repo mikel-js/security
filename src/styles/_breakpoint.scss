@@ -1,0 +1,37 @@
+@mixin breakpoint($view) {
+  @if ($view == small-phone) {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+
+  @if ($view == phone) {
+    @media (min-width: 400px) and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($view == tab-port) {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($view == tab-land) {
+    @media (min-width: 1000px) {
+      @content;
+    }
+  }
+
+  @if ($view == desktop) {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if ($view == desktop-large) {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}

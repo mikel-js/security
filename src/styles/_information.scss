@@ -6,7 +6,14 @@
 
   &__content {
     display: flex;
-    width: 60%;
+
+    @include breakpoint(desktop) {
+      width: 80%;
+    }
+
+    @include breakpoint(desktop-large) {
+      width: 60%;
+    }
   }
 
   &__container {

@@ -4,7 +4,7 @@ import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
-const App = ({ darkMode }) => {
+const Scene = ({ darkMode }) => {
   const mountRef = useRef(null);
   const showLight = !darkMode;
   const width = window.visualViewport.width - 200;
@@ -141,15 +141,13 @@ const App = ({ darkMode }) => {
       scene.add(moon);
     }
 
-    window.addEventListener('resize', onWindowResize, false);
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
 
     const tick = () => {
       controls.update();
-
       renderer.render(scene, camera);
-
+      window.addEventListener('resize', onWindowResize, false);
       window.requestAnimationFrame(tick);
     };
 
@@ -161,4 +159,4 @@ const App = ({ darkMode }) => {
   return <div ref={mountRef}></div>;
 };
 
-export default App;
+export default Scene;

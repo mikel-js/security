@@ -15,10 +15,14 @@
   }
 
   &__container {
-    width: 60%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint(tab-land) {
+      width: 60%;
+    }
   }
 
   &__items {

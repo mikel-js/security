@@ -7,8 +7,11 @@
   align-items: center;
 
   &__content {
-    width: 30%;
+    width: 70%;
     margin-left: 25%;
+    @include breakpoint(desktop) {
+      width: 30%;
+    }
     h3 {
       font-weight: 400;
     }

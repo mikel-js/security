@@ -7,7 +7,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 const Scene = ({ darkMode }) => {
   const mountRef = useRef(null);
   const showLight = !darkMode;
-  const width = window.visualViewport.width - 200;
+  let width = window.visualViewport.width - 200;
 
   useEffect(() => {
     const scene = new THREE.Scene();
@@ -72,11 +72,7 @@ const Scene = ({ darkMode }) => {
 
     const fog = new THREE.Fog('#b3b3b3', 1, 15);
 
-    let onWindowResize = function () {
-      camera.aspect = width / 500;
-      camera.updateProjectionMatrix();
-      renderer.setSize(width, 500);
-    };
+    let onWindowResize = function () {};
 
     const textureLoader = new THREE.TextureLoader();
 
@@ -143,11 +139,15 @@ const Scene = ({ darkMode }) => {
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
+    window.addEventListener('resize', () => {
+      width = window.visualViewport.width - 200;
+
+      renderer.setSize(width, 500);
+    });
 
     const tick = () => {
       controls.update();
       renderer.render(scene, camera);
-      window.addEventListener('resize', onWindowResize, false);
       window.requestAnimationFrame(tick);
     };
 

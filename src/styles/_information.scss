@@ -6,9 +6,11 @@
 
   &__content {
     display: flex;
+    flex-direction: column;
 
     @include breakpoint(desktop) {
-      width: 80%;
+      flex-direction: row;
+      width: 90%;
     }
 
     @include breakpoint(desktop-large) {
